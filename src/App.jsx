@@ -16,6 +16,43 @@ function App() {
   return (
     <>
       <Header />
+      <section id="home" className="min-h-[90vh] bg-[#F0F7FF] flex items-center pt-20 pb-20 md:pt-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Text Column */}
+        <div className="text-center md:text-left space-y-6 order-2 md:order-1">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[#1A202C] leading-tight">
+            Unlock Your Best Self: <br className="hidden md:block" />
+            <span className="italic text-[#3B82F6]">Renewed Vitality</span>
+          </h1>
+          
+          <p className="text-gray-600 text-base sm:text-lg max-w-lg mx-auto md:mx-0 leading-relaxed">
+            Discover the path to lasting well-being with Senafix. Bespoke programs designed for graceful transformation.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#contact" className="bg-[#3B82F6] hover:bg-blue-600 text-white font-medium px-8 py-4 rounded-lg shadow-lg shadow-blue-200 transition-all text-center">
+              Start Transformation
+            </a>
+            <a href="#about" className="text-[#3B82F6] font-medium px-8 py-4 rounded-lg border border-blue-100 hover:bg-blue-50 transition-all text-center">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        {/* Image Column */}
+        <div className="relative order-1 md:order-2">
+          <div className="rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-md md:max-w-full">
+             {/* Replace this with your actual image variable or path */}
+            <img 
+              src="https://plus.unsplash.com/premium_photo-1679440415182-c362deb2fd40?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Lindiwe Senafix" 
+              className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
       <AboutSection />
       <Transformations />
       <ProductSection />

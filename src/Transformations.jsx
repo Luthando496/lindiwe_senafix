@@ -26,9 +26,9 @@ const Transformations = () => {
           Inspiring Transformations: Real Journeys, Real Results
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((item, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+            <div key={index} className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
               {/* Image Container */}
               <div className="flex gap-2 mb-6 w-full">
                 <div className="flex-1">

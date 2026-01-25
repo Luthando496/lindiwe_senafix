@@ -28,13 +28,14 @@ const products = [
 
 const ProductSection = () => {
   return (
-    <section id="products" className="bg-white py-20 px-8">
+   <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-serif text-center text-[#1A202C] mb-16">
-          Senafix Solutions: Tailored for Your Goals
+        <h2 className="text-3xl md:text-5xl font-serif text-center text-[#1A202C] mb-12">
+          Senafix Solutions
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        {/* Grid changes from 1 column (mobile) to 2 columns (md+) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
           {products.map((product, index) => (
             <div
               key={index}
