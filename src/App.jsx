@@ -26,7 +26,7 @@ function App() {
         
         {/* Copyright */}
         <p className="text-gray-400 text-sm">
-          © {year} Senafix Wellness. All rights reserved.
+          © {year} Senafix Wellness by Lindiwe. All rights reserved.
         </p>
 
         {/* Social Icons */}
