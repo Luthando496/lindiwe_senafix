@@ -167,7 +167,7 @@ const ContactSection = () => {
                   <p className="text-blue-100 text-xs font-bold uppercase tracking-wider mb-1">
                     Email Me
                   </p>
-                  <p className="font-medium text-lg break-all">
+                  <p className="font-medium text-xs md:text-lg break-all">
                     lindiwedidiza56@gmail.com
                   </p>
                 </div>
@@ -194,7 +194,7 @@ const ContactSection = () => {
                   <p className="text-blue-100 text-xs font-bold uppercase tracking-wider mb-1">
                     Call Us
                   </p>
-                  <p className="font-medium text-lg">+27 81 726 5743</p>
+                  <p className="font-medium text-xs md:text-lg">+27 81 726 5743</p>
                 </div>
               </div>
 
@@ -225,7 +225,7 @@ const ContactSection = () => {
                   <p className="text-blue-100 text-xs font-bold uppercase tracking-wider mb-1">
                     Visit Me
                   </p>
-                  <p className="font-medium text-lg leading-snug">
+                  <p className="font-medium text-sm md:text-lg leading-snug">
                     12 Stanley street Perm Gardens,
                     <br />
                     Eerste River
