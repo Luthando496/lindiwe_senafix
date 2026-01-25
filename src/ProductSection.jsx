@@ -1,5 +1,5 @@
-
-
+import nutImage from './assets/senafix_nut.png';
+import soapImage from './assets/senafix_soap.png';
 
 
 const products = [
@@ -7,8 +7,8 @@ const products = [
     title: "Senafix Body Loss Capsules",
     description:
       "Advanced formula for healthy fat reduction and metabolism boost. Achieve your ideal weight naturally.",
-    price: "R150",
-    image: "../src/assets/senafix_nut.png", // Replace with your actual image path
+    price: "R270",
+    image: nutImage, // Replace with your actual image path
   },
   {
     title: "Senafix Body Gain Capsules",
@@ -22,7 +22,7 @@ const products = [
     description:
       "Introducing the Ultimate Turmeric Skincare Trio: a powerful combination of Turmeric Soap, Turmeric Oil and Dark Inner Thigh Cream. Unlock the secret to radiant, healthy-looking skin with this premium skincare bundle. Turmeric Soap: Infused with pure turmeric extract, our Turmeric Soap gently cleanses, hydrates, and rejuvenates the skin. Say goodbye to dark spots and blemishes as this luxurious soap works to even out skin tone and improve overall texture.",
     price: "R345",
-    image: "../src/assets/senafix_soap.png", // Replace with your actual image path
+    image: soapImage, // Replace with your actual image path
   },
 ];
 
