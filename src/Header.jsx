@@ -13,7 +13,7 @@ const Header = () => {
             <div className="w-8 h-8 bg-[#3B82F6] rounded flex items-center justify-center">
               <span className="text-white text-xs">💙</span>
             </div>
-            <span className="text-[#3B82F6] font-bold text-xl tracking-tight">Senafix</span>
+            <span className="text-[#3B82F6] font-bold text-xl tracking-tight">Lindiwe Wellnes</span>
           </div>
 
           {/* Desktop Navigation (Hidden on Mobile) */}

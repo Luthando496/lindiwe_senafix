@@ -1,20 +1,22 @@
 import React from 'react';
+import before_1 from './assets/before_1.png'
+import after_1 from './assets/after_1.png'
 
 const testimonials = [
   {
     name: "Elara M., 58",
     text: "lost 25 lbs and found her energy again with Senafix. 'I feel younger and more vibrant than ever!'",
-    images: { before: "/elara-before.jpg", after: "/elara-after.jpg" }
+    images: { before:before_1, after: after_1 }
   },
   {
     name: "David S., 45",
     text: "transformed his physique and boosted stamina. 'Senafix gave me the confidence to push my limits!'",
-    images: { before: "/david-before.jpg", after: "/david-after.jpg" }
+    images: { before:before_1, after: after_1 }
   },
   {
     name: "Sarah L., 39",
     text: "achieved her fitness goals and radiates positivity. 'The best decision I made for my health and happiness!'",
-    images: { before: "/sarah-before.jpg", after: "/sarah-after.jpg" }
+    images: { before:before_1, after: after_1 }
   }
 ];
 
