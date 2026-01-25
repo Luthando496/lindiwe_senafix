@@ -28,7 +28,7 @@ const products = [
 
 const ProductSection = () => {
   return (
-   <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+   <section id='products' className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-serif text-center text-[#1A202C] mb-12">
           Senafix Solutions
