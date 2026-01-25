@@ -141,7 +141,7 @@ const ContactSection = () => {
             {/* Decorative background blur */}
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-white opacity-10 blur-2xl"></div>
 
-            <h3 className="text-3xl font-serif mb-12 relative z-10">
+            <h3 className="text-xl md:text-3xl font-serif mb-12 relative z-10">
               Contact Information
             </h3>
 
