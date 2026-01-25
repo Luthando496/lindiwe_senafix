@@ -60,7 +60,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="bg-[#F0F7FF] py-24 px-8">
+    <section id="features" className="bg-[#F0F7FF] py-24 px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-serif text-center text-[#1A202C] mb-16">
           Why Choose Senafix? Our Premium Benefits

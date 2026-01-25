@@ -4,12 +4,12 @@ import { useForm, ValidationError } from '@formspree/react';
 const ContactSection = () => {
   // 1. Setup Formspree hook
   // Replace "YOUR_FORM_ID" with the unique ID you get from formspree.io
-  const [state, handleSubmit] = useForm("YOUR_FORM_ID");
+  const [state, handleSubmit] = useForm("meeayapl");
 
   // 2. Show a success message if the form submits successfully
   if (state.succeeded) {
       return (
-        <section className="bg-white py-24 px-8 text-center min-h-[50vh] flex flex-col items-center justify-center">
+        <section id='' className="bg-white py-24 px-8 text-center min-h-[50vh] flex flex-col items-center justify-center">
             <div className="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mb-6">
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -31,7 +31,7 @@ const ContactSection = () => {
 
   // 3. Main Contact Layout
   return (
-    <section className="bg-white py-24 px-8">
+    <section id='contact' className="bg-white py-24 px-8">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}

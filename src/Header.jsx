@@ -14,12 +14,10 @@ const HeroSection = () => {
         
         <div className="hidden md:flex gap-8 text-gray-600 font-medium">
           <a href="#" className="text-[#3B82F6]">Home</a>
-          <a href="#" className="hover:text-[#3B82F6] transition-colors">About</a>
-          <a href="#" className="hover:text-[#3B82F6] transition-colors">Gallery</a>
-          <a href="#" className="hover:text-[#3B82F6] transition-colors">Products</a>
-          <a href="#" className="hover:text-[#3B82F6] transition-colors">Features</a>
-          <a href="#" className="hover:text-[#3B82F6] transition-colors">Testimonials</a>
-          <a href="#" className="hover:text-[#3B82F6] transition-colors">Contact</a>
+          <a href="#about" className="hover:text-[#3B82F6] transition-colors">About</a>
+          <a href="#products" className="hover:text-[#3B82F6] transition-colors">Products</a>
+          <a href="#features" className="hover:text-[#3B82F6] transition-colors">Features</a>
+          <a href="#contact" className="hover:text-[#3B82F6] transition-colors">Contact</a>
         </div>
       </nav>
 

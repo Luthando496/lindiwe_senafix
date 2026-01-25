@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-20 px-8">
+    <section id='about' className="bg-white py-20 px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         
         {/* Left Column: Text Content */}
