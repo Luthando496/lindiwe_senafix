@@ -8,6 +8,7 @@ import Transformations from "./Transformations";
 import ProductSection from "./ProductSection";
 import BenefitsSection from "./BenefitsSection";
 import ContactSection from "./ContactSection";
+import SenafixGallery from "./SenafixGallery";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -57,6 +58,7 @@ function App() {
       <Transformations />
       <ProductSection />
       <BenefitsSection />
+      <SenafixGallery />
       <ContactSection />
     <footer className="bg-white border-t border-gray-100 py-12 px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
