@@ -1,78 +1,89 @@
+import React from 'react';
 import nutImage from './assets/senafix_nut.png';
 import soapImage from './assets/senafix_soap.png';
-
 
 const products = [
   {
     title: "Senafix Body Loss Capsules",
-    description:
-      "Advanced formula for healthy fat reduction and metabolism boost. Achieve your ideal weight naturally.",
+    description: "Advanced formula for healthy fat reduction and metabolism boost. Achieve your ideal weight naturally.",
     price: "R270",
-    image: nutImage, // Replace with your actual image path
+    image: nutImage,
+    featured: false,
   },
   {
     title: "Senafix Body Gain Capsules",
-    description:
-      "Supports lean muscle development and healthy weight gain. Perfect for toning and strength building.",
+    description: "Supports lean muscle development and healthy weight gain. Perfect for toning and strength building.",
     price: "R270",
-    image: "https://www.senafixproducts.co.za/images/DayFatBurner.jpeg", // Replace with your actual image path
+    image: "https://www.senafixproducts.co.za/images/DayFatBurner.jpeg",
+    featured: false,
   },
   {
-    title: "Senafix Turmeric Skin Combo - Soap Oil & Cream",
-    description:
-      "Introducing the Ultimate Turmeric Skincare Trio: a powerful combination of Turmeric Soap, Turmeric Oil and Dark Inner Thigh Cream. ",
+    title: "Senafix Turmeric Skin Combo",
+    description: "Ultimate Turmeric Trio: a powerful combination of Turmeric Soap, Turmeric Oil and Dark Inner Thigh Cream.",
     price: "R345",
-    image: soapImage, // Replace with your actual image path
+    image: soapImage,
+    featured: true, // This marks it as the featured product
   },
 ];
 
 const ProductSection = () => {
   return (
-    <section id='products' className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <section id='products' className="bg-slate-50 py-12 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-serif text-center text-[#1A202C] mb-12">
+        <h2 className="text-3xl md:text-5xl font-serif text-center text-[#1A202C] mb-10 md:mb-16">
           Senafix Solutions
         </h2>
 
-        {/* Grid changes from 1 column (mobile) to 2 columns (md+) */}
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-6xl mx-auto">
           {products.map((product, index) => (
             <div
               key={index}
-              /* w-full = 1 column on mobile 
-                 md:w-[calc(33.333%-2rem)] = 3 columns on desktop (accounting for gap)
-              */
-              className="flex-none w-full md:w-[calc(33.333%-32px)] bg-gray-600 p-10 overflow-hidden rounded-3xl shadow-lg shadow-gray-100 border border-gray-50 flex flex-col items-center text-center"
+              className={`relative group p-6 md:p-10 rounded-[2rem] shadow-xl flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 ${
+                product.featured 
+                ? 'bg-gray-800 ring-4 ring-[#E69B56] ring-offset-2 shadow-orange-100' 
+                : 'bg-gray-600 shadow-gray-200/50'
+              }`}
             >
-              {/* Product Image */}
-              <div className="h-64 w-full flex items-center justify-center mb-8">
+              {/* Featured Badge */}
+              {product.featured && (
+                <div className="absolute -top-4 right-6 bg-[#E69B56] text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-widest z-20">
+                  Best Seller
+                </div>
+              )}
+
+              {/* Product Image Container */}
+              <div className="h-48 md:h-64 w-full flex items-center justify-center mb-6 md:mb-8 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="max-h-full object-contain"
+                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
               {/* Product Info */}
-              <h3 className="text-2xl font-serif text-white mb-4">
+              <h3 className="text-xl md:text-2xl font-serif text-white mb-3 md:mb-4 min-h-[3.5rem] flex items-center justify-center">
                 {product.title}
               </h3>
 
-              <p className="text-white text-sm leading-relaxed mb-6 px-4">
+              <p className="text-gray-200 text-sm leading-relaxed mb-6 px-2 opacity-90">
                 {product.description}
               </p>
 
-              {/* spacer to push button to bottom if descriptions vary in length */}
               <div className="grow"></div>
 
-              <span className="text-[#3B82F6] text-3xl font-medium mb-2">
-                {product.price}
-              </span>
+              <div className="flex flex-col items-center gap-4 mt-auto w-full">
+                <span className={`text-2xl md:text-3xl font-bold ${product.featured ? 'text-orange-400' : 'text-[#60A5FA]'}`}>
+                  {product.price}
+                </span>
 
-              {/* Call to Action */}
-              <button className="bg-[#E69B56] hover:bg-[#d48a47] text-white font-semibold px-10 py-3 rounded-xl shadow-md transition-all active:scale-95">
-                Buy Now
-              </button>
+                <button className={`w-full sm:w-auto font-bold px-10 py-4 rounded-2xl shadow-lg transition-all active:scale-95 ${
+                  product.featured 
+                  ? 'bg-white text-gray-800 hover:bg-gray-100' 
+                  : 'bg-[#E69B56] text-white hover:bg-[#d48a47]'
+                }`}>
+                  Buy Now
+                </button>
+              </div>
             </div>
           ))}
         </div>
